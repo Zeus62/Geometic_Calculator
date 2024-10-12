@@ -25,6 +25,29 @@ The project is structured into multiple classes:
 - **`Circle`, `Rectangle`, `Square`:** Concrete classes extending `GeometricObject` to implement specific area and perimeter calculations.
 - **`Framee`:** The GUI class that handles user interactions and displays the results.
 
+## Usage
+
+Select Shape: Use the dropdown menu to select the geometric shape for which you want to calculate the area and perimeter.
+
+Enter Dimensions:
+
+For Circle: Enter the radius.
+For Square: Enter the side length.
+For Rectangle: Enter the width and height.
+Calculate: Click the "Calculate and Display" button to see the results for both area and perimeter.
+
+Reset Fields: The fields will reset based on the selected shape.
+
+Error Handling
+This application includes robust error handling to ensure that user inputs are valid and to manage potential exceptions gracefully. Key features of the error handling include:
+
+Input Validation: The application checks if the entered values are numeric and positive. If the user enters invalid data (e.g., negative numbers or non-numeric values), a dialog box will display an error message.
+
+Try and Catch Blocks: The calculations and input parsing are wrapped in try and catch blocks to handle exceptions:
+
+NumberFormatException: Catches errors when parsing user input into a double. If the input cannot be converted to a numeric value, an error message will be shown.
+IllegalArgumentException: Custom exceptions are thrown when a user provides a non-positive value. The error message is displayed to inform the user of the issue.
+
 ## Installation
 
 1. **Clone the repository:**
